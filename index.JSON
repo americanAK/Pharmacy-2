@@ -1,0 +1,44 @@
+{
+    "medicines": {
+        "analgesics": [
+            {"id": "analgesic1", "name": "Ibuprofen", "price": 500},
+            {"id": "analgesic2", "name": "Acetaminophen", "price": 320},
+            {"id": "analgesic3", "name": "Aspirin", "price": 450},
+            {"id": "analgesic4", "name": "Naproxen", "price": 600},
+            {"id": "analgesic5", "name": "Diclofenac", "price": 750},
+            {"id": "analgesic6", "name": "Ketoprofen", "price": 900}
+        ],
+        "antibiotics": [
+            {"id": "antibiotic1", "name": "Amoxicillin", "price": 380},
+            {"id": "antibiotic2", "name": "Penicillin", "price": 420},
+            {"id": "antibiotic3", "name": "Doxycycline", "price": 470},
+            {"id": "antibiotic4", "name": "Cephalexin", "price": 550},
+            {"id": "antibiotic5", "name": "Azithromycin", "price": 620},
+            {"id": "antibiotic6", "name": "Clarithromycin", "price": 680}
+        ],
+        "antidepressants": [
+            {"id": "antidepressant1", "name": "Fluoxetine", "price": 730},
+            {"id": "antidepressant2", "name": "Sertraline", "price": 780},
+            {"id": "antidepressant3", "name": "Paroxetine", "price": 820},
+            {"id": "antidepressant4", "name": "Citalopram", "price": 860},
+            {"id": "antidepressant5", "name": "Escitalopram", "price": 910},
+            {"id": "antidepressant6", "name": "Venlafaxine", "price": 960}
+        ],
+        "antihistamines": [
+            {"id": "antihistamine1", "name": "Diphenhydramine", "price": 380},
+            {"id": "antihistamine2", "name": "Loratadine", "price": 420},
+            {"id": "antihistamine3", "name": "Cetirizine", "price": 470},
+            {"id": "antihistamine4", "name": "Fexofenadine", "price": 550},
+            {"id": "antihistamine5", "name": "Desloratadine", "price": 620},
+            {"id": "antihistamine6", "name": "Chlorpheniramine", "price": 680}
+        ],
+        "antihypertensives": [
+            {"id": "antihypertensive1", "name": "Lisinopril", "price": 640},
+            {"id": "antihypertensive2", "name": "Losartan", "price": 680},
+            {"id": "antihypertensive3", "name": "Amlodipine", "price": 730},
+            {"id": "antihypertensive4", "name": "Hydrochlorothiazide", "price": 780},
+            {"id": "antihypertensive5", "name": "Metoprolol", "price": 820},
+            {"id": "antihypertensive6", "name": "Enalapril", "price": 880}
+        ]
+    }
+}

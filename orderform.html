@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Pharmacy order page</title>
+    <link rel="stylesheet" href="only.css">
+    <script src="orderform.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Pharmacy</h1>
+            <nav>
+                <a href="#cart">Cart</a>
+                <a href="#order">Order</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <section id="order">
+                <h2>Order Information</h2>
+                <form id="orderForm">
+                    <div class="form-group">
+                        <label for="fullName">Full Name</label>
+                        <input type="text" id="fullName" name="fullName" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="address">Shipping Address</label>
+                        <textarea id="address" name="address" rows="4" required></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="paymentMethod">Payment Method</label>
+                        <select id="paymentMethod" name="paymentMethod" required>
+                            <option value="creditCard">Credit Card</option>
+                            <option value="paypal">PayPal</option>
+                            <option value="bankTransfer">Bank Transfer</option>
+                        </select>
+                    </div>
+                    
+                    <h3>Order Summary</h3>
+                    <table id="orderSummary">
+                        <thead>
+                            <tr>
+                                <th>Item</th>
+                                <th>Quantity</th>
+                                <th>Total Price</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Rows will be added dynamically here -->
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="2">Total Price</td>
+                                <td id="totalPrice">$0.00</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                    
+                    <div class="buttons">
+                        <button type="submit" id="placeOrderButton">Place Order</button>
+                    </div>
+                </form>
+                <p id="confirmation-message"></p>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2022 Galle Pharmacy. All rights reserved.</p>
+    </footer>
+
+   
+</body>
+</html>

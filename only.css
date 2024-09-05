@@ -1,0 +1,500 @@
+/* General Styles */
+html, body {
+    overflow-x: hidden;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: darkblue;
+    color: #fff;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    margin-top: 60px; /* To account for fixed header */
+    padding: 20px;
+    flex: 1; /* Ensures the main content takes available space */
+}
+
+/* Medicine Shop Page */
+.main-image {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.main-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.main-image h2 {
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+.medicine-section {
+    margin-bottom: 40px;
+}
+
+.medicine-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.medicine-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.medicine-item {
+    text-align: center;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.medicine-item img {
+    max-width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 10px;
+}
+
+.info {
+    font-size: 14px;
+}
+
+.info label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.info input {
+    width: 100%;
+    max-width: 300px; /* Max width for inputs */
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    box-sizing: border-box;
+    margin: 0 auto; /* Center the input fields */
+    display: block; /* Ensure block-level centering */
+}
+
+textarea {
+    resize: vertical;
+}
+
+/* Cart Section */
+#cart {
+    margin-top: 40px;
+}
+
+#cart h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#cartTable {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#cartTable th, #cartTable td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+#cartTable tfoot tr {
+    font-weight: bold;
+}
+
+.buttons {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.buttons button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #fff;
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+    background: linear-gradient(45deg, #ff6f61, #de6262); /* Stylish gradient */
+}
+
+.buttons button:hover {
+    background: linear-gradient(45deg, #de6262, #ff6f61); /* Reversed gradient for hover */
+    transform: scale(1.05); /* Slight zoom effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Box shadow effect */
+}
+
+.buttons button:active {
+    background: linear-gradient(45deg, #ff6f61, #de6262); /* Reversed gradient for active */
+    transform: scale(1); /* Reset zoom effect */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Reduced shadow for active state */
+}
+
+/* Add to Favourites and Apply Favourites Buttons */
+.buttons-section {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.buttons-section button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    color: #fff;
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+}
+
+#addToFavourites {
+    background: linear-gradient(45deg, #4caf50, #66bb6a); /* Stylish gradient */
+}
+
+#addToFavourites:hover {
+    background: linear-gradient(45deg, #66bb6a, #4caf50); /* Reversed gradient for hover */
+    transform: scale(1.05); /* Slight zoom effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Box shadow effect */
+}
+
+#addToFavourites:active {
+    background: linear-gradient(45deg, #4caf50, #66bb6a); /* Reversed gradient for active */
+    transform: scale(1); /* Reset zoom effect */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Reduced shadow for active state */
+}
+
+#applyFavourites {
+    background: linear-gradient(45deg, #2196f3, #42a5f5); /* Stylish gradient */
+    margin-left: 10px;
+}
+
+#applyFavourites:hover {
+    background: linear-gradient(45deg, #42a5f5, #2196f3); /* Reversed gradient for hover */
+    transform: scale(1.05); /* Slight zoom effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Box shadow effect */
+}
+
+#applyFavourites:active {
+    background: linear-gradient(45deg, #2196f3, #42a5f5); /* Reversed gradient for active */
+    transform: scale(1); /* Reset zoom effect */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Reduced shadow for active state */
+}
+
+/* Add to Cart Button */
+.add-to-cart {
+    background: linear-gradient(45deg, #ff9800, #ff5722); /* Stylish gradient */
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+}
+
+.add-to-cart:hover {
+    background: linear-gradient(45deg, #ff5722, #ff9800); /* Reversed gradient for hover */
+    transform: scale(1.05); /* Slight zoom effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Box shadow effect */
+}
+
+.add-to-cart:active {
+    background: linear-gradient(45deg, #ff9800, #ff5722); /* Reversed gradient for active */
+    transform: scale(1); /* Reset zoom effect */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Reduced shadow for active state */
+}
+
+/* Footer */
+footer {
+    background-color: darkblue;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+}
+
+/* Order Page */
+#orderForm {
+    margin-top: 40px;
+}
+
+#orderForm h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#orderForm .form-group {
+    margin-bottom: 20px;
+}
+
+#orderForm label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#orderForm input, 
+#orderForm textarea, 
+#orderForm select {
+    width: 100%;
+    max-width: 300px; /* Max width for inputs */
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    box-sizing: border-box;
+    margin: 0 auto; /* Center the input fields */
+    display: block; /* Ensure block-level centering */
+}
+
+textarea {
+    resize: vertical;
+}
+
+/* Updated Order Summary Table */
+#orderSummary {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#orderSummary th, 
+#orderSummary td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+#orderSummary th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+#orderSummary tfoot tr {
+    font-weight: bold;
+    background-color: #f9f9f9;
+}
+
+/* Order Buttons */
+.order-buttons {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.order-buttons button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: #fff;
+    font-size: 16px;
+}
+
+/* Confirmation Message */
+#confirmation-message {
+    background-color: #dff0d8; /* Light green background */
+    color: #3c763d; /* Darker green text */
+    border: 1px solid #d6e9c6; /* Slightly darker green border */
+    border-radius: 5px;
+    padding: 15px;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+}
+@media (max-width: 414px) {
+    header .container {
+        flex-direction: column;
+    }
+
+    .main-image h2 {
+        font-size: 22px;
+    }
+
+    .medicine-grid {
+        grid-template-columns: 1fr; /* One column layout */
+    }
+
+    .buttons button,
+    .order-buttons button {
+        padding: 8px 15px; /* Adjusted padding for mobile */
+        font-size: 12px; /* Smaller font size for mobile */
+        width: 100%; /* Full-width buttons */
+        margin: 5px; /* Space between buttons on mobile */
+    }
+
+    .medicine-item img {
+        object-fit: cover;
+        height: 220px; /* Maintain aspect ratio */
+    }
+
+    .info input, #orderForm input, #orderForm textarea, #orderForm select {
+        width: 90%; /* Input field adjustment for mobile */
+    }
+
+    #cartTable, #orderSummary {
+        font-size: 12px;
+    }
+
+    .order-buttons {
+        flex-direction: column; /* Stack buttons vertically on mobile */
+        gap: 10px; /* Adjust gap for mobile */
+    }
+}
+
+/* Media Query for iPhone SE and devices with a max-width of 375px */
+@media (max-width: 375px) {
+    header .container {
+        flex-direction: column;
+    }
+
+    .main-image h2 {
+        font-size: 20px;
+    }
+
+    .medicine-grid {
+        grid-template-columns: 1fr; /* One column layout */
+    }
+
+    .buttons button,
+    .order-buttons button {
+        padding: 8px 15px; /* Adjusted padding for smaller screens */
+        font-size: 12px;
+        width: 100%; /* Full-width buttons */
+        margin: 5px;
+    }
+
+    .medicine-item img {
+        object-fit: cover;
+        height: 200px; /* Maintain aspect ratio */
+    }
+
+    .info input, #orderForm input, #orderForm textarea, #orderForm select {
+        width: 90%; /* Input field adjustment for mobile */
+    }
+
+    #cartTable, #orderSummary {
+        font-size: 12px;
+    }
+
+    .order-buttons {
+        flex-direction: column; /* Stack buttons vertically */
+        gap: 10px;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .medicine-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .medicine-item {
+        padding: 5px;
+    }
+
+    .info label {
+        font-size: 12px;
+    }
+
+    .info input, 
+    .info textarea, 
+    .info select {
+        font-size: 14px;
+    }
+
+    .buttons button,
+    .order-buttons button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+    footer {
+        padding: 8px;
+    }
+
+    .buttons-section {
+        display: block; /* Make sure buttons stack vertically */
+    }
+
+    #orderForm label {
+        text-align: center; /* Center-align labels on mobile */
+    }
+}
+
+@media (max-width: 480px) {
+    .medicine-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .main-image h2 {
+        font-size: 20px;
+    }
+
+    .info input, 
+    .info textarea, 
+    .info select {
+        font-size: 14px;
+    }
+
+    .buttons button,
+    .order-buttons button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+    footer {
+        padding: 8px;
+    }
+}
+
+
